@@ -4,29 +4,29 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="color-scheme" content="light only">
-<meta name="theme-color" content="#F7F3EC">
-<title>تدبر · دفتر الاستهداء بآيات اكتشاف الحقائق</title>
+<meta name="theme-color" content="#FAF5EA">
+<title>تدبر · دفتر الاستهداء بآيات الهداية</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --paper:#F7F3EC;
-    --paper-deep:#EFE4D5;
-    --ink:#4A3826;
-    --ink-soft:#7A6752;
-    --brown:#8B5E34;
-    --brown-soft:#D9C3A6;
-    --sage:#8B6F4E;
-    --line: rgba(74,56,38,0.14);
-    --shadow: 0 1px 2px rgba(74,56,38,0.06), 0 8px 24px rgba(74,56,38,0.06);
+    --paper:#FAF5EA;
+    --paper-deep:#F1E9D8;
+    --ink:#3B564C;
+    --ink-soft:#6B7D74;
+    --gold:#AD8A4E;
+    --gold-soft:#D9C49A;
+    --sage:#7C8F6E;
+    --line: rgba(32,48,43,0.14);
+    --shadow: 0 1px 2px rgba(32,48,43,0.06), 0 8px 24px rgba(32,48,43,0.06);
   }
   *{box-sizing:border-box;}
-  html{color-scheme: light only; background:#F7F3EC !important;}
+  html{color-scheme: light only; background:#FAF5EA !important;}
   body{
     margin:0;
     background:
-      radial-gradient(circle at 15% 8%, rgba(139,94,52,0.08), transparent 40%),
-      radial-gradient(circle at 90% 90%, rgba(122,103,82,0.09), transparent 45%),
+      radial-gradient(circle at 15% 8%, rgba(173,138,78,0.07), transparent 40%),
+      radial-gradient(circle at 90% 90%, rgba(124,143,110,0.08), transparent 45%),
       var(--paper) !important;
     color:var(--ink);
     font-family:'Tajawal', sans-serif;
@@ -34,7 +34,7 @@
     padding:28px 16px 60px;
   }
   @media (prefers-color-scheme: dark){
-    html, body{ background:#F7F3EC !important; }
+    html, body{ background:#FAF5EA !important; }
     body{ color:var(--ink) !important; }
     .card, .entry{ background:var(--paper-deep) !important; }
     input, textarea{ background:var(--paper) !important; color:var(--ink) !important; }
@@ -47,17 +47,17 @@
     margin-bottom:30px;
     position:relative;
   }
+  .ornament{
+    width:34px; height:34px; margin:0 auto 10px;
+    opacity:0.75;
+  }
   .verse{
     font-family:'Amiri', serif;
-    font-size:1.05rem;
-    color:var(--brown);
-    margin:0 0 12px;
+    font-size:1.3rem;
+    color:var(--gold);
+    margin:0 0 10px;
     font-weight:700;
-    letter-spacing:0.2px;
-    line-height:1.9;
-    max-width:480px;
-    margin-left:auto;
-    margin-right:auto;
+    letter-spacing:0.3px;
   }
   h1{
     font-family:'Amiri', serif;
@@ -77,7 +77,7 @@
   }
   .rule{
     width:120px; height:1px;
-    background:linear-gradient(90deg, transparent, var(--brown-soft), transparent);
+    background:linear-gradient(90deg, transparent, var(--gold-soft), transparent);
     margin:18px auto 0;
   }
 
@@ -90,7 +90,7 @@
     font-family:'Amiri', serif;
   }
   .stat{text-align:center;}
-  .stat .num{font-size:1.6rem; color:var(--brown); font-weight:700; display:block; line-height:1;}
+  .stat .num{font-size:1.6rem; color:var(--gold); font-weight:700; display:block; line-height:1;}
   .stat .lbl{font-size:0.72rem; color:var(--ink-soft); font-family:'Tajawal'; margin-top:4px; display:block;}
 
   /* ---- Form card ---- */
@@ -107,7 +107,7 @@
     content:"";
     position:absolute;
     top:12px; right:12px; bottom:12px; left:12px;
-    border:1px solid rgba(139,94,52,0.18);
+    border:1px solid rgba(173,138,78,0.18);
     border-radius:9px;
     pointer-events:none;
   }
@@ -116,7 +116,7 @@
   label{
     display:block;
     font-size:0.82rem;
-    color:var(--brown);
+    color:var(--gold);
     font-weight:700;
     margin-bottom:6px;
   }
@@ -134,8 +134,8 @@
   }
   input:focus, textarea:focus{
     outline:none;
-    border-color:var(--brown);
-    box-shadow:0 0 0 3px rgba(139,94,52,0.12);
+    border-color:var(--gold);
+    box-shadow:0 0 0 3px rgba(173,138,78,0.12);
   }
   textarea{min-height:70px; line-height:1.6;}
   .row2{display:flex; gap:12px;}
@@ -144,8 +144,8 @@
   button.save{
     width:100%;
     margin-top:18px;
-    background:var(--brown);
-    color:#F5FAFC;
+    background:var(--gold);
+    color:#FFFDF8;
     border:none;
     border-radius:8px;
     padding:13px;
@@ -155,14 +155,14 @@
     cursor:pointer;
     transition:background .15s, transform .1s;
   }
-  button.save:hover{background:#6E4A28;}
+  button.save:hover{background:#96763D;}
   button.save:active{transform:scale(0.99);}
   button.save:disabled{opacity:0.5; cursor:default;}
 
   .status{
     text-align:center;
     font-size:0.82rem;
-    color:#8B6F4E;
+    color:var(--sage);
     height:18px;
     margin-top:8px;
   }
@@ -188,7 +188,7 @@
     padding:18px 20px;
     margin-bottom:14px;
     position:relative;
-    border-right:3px solid var(--brown-soft);
+    border-right:3px solid var(--gold-soft);
     box-shadow:var(--shadow);
   }
   .entry-top{
@@ -212,7 +212,7 @@
   .entry-block{margin-top:10px;}
   .entry-block .k{
     font-size:0.74rem;
-    color:var(--brown);
+    color:var(--gold);
     font-weight:700;
     margin-bottom:3px;
   }
@@ -240,6 +240,9 @@
     padding:30px 10px;
     line-height:1.9;
   }
+  .empty .ornament{opacity:0.4;}
+
+  .loading{text-align:center; color:var(--ink-soft); font-size:0.85rem; padding:20px;}
 
   footer{
     text-align:center;
@@ -259,8 +262,9 @@
 <div class="wrap">
 
   <header>
-    <p class="verse">﴿ وَقُل رَّبِّ زِدْنِي عِلْمًا ﴾</p>
-    <h1>دفتر الاستهداء بآيات اكتشاف الحقائق</h1>
+    <p class="verse">﴿ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ﴾</p>
+    <h1>دفتر الاستهداء بآيات الهداية</h1>
+    <div class="rule"></div>
   </header>
 
   <div class="stats">
@@ -280,12 +284,12 @@
       </div>
     </div>
     <div class="field">
-      <label for="fAyat">الآية / الآيات التي تطرقت لاكتشاف الحقائق</label>
+      <label for="fAyat">الآية / الآيات التي تطرقت للهداية</label>
       <textarea id="fAyat" placeholder="اكتب الآية أو رقمها ومكانها..."></textarea>
     </div>
     <div class="field">
-      <label for="fFawaid">الاستهداء بآيات اكتشاف الحقائق</label>
-      <textarea id="fFawaid" placeholder="ما الذي تعلمته من هذه الآية عن اكتشاف الحقائق؟"></textarea>
+      <label for="fFawaid">الاستهداء بآيات الهداية</label>
+      <textarea id="fFawaid" placeholder="ما الذي تعلمته من هذه الآية عن الهداية؟"></textarea>
     </div>
     <button class="save" id="saveBtn">حفظ التدوينة</button>
     <div class="status" id="statusMsg"></div>
@@ -300,11 +304,11 @@
     <div class="loading">جارِ التحميل...</div>
   </div>
 
-  <footer>دفتر شخصي للاستهداء اليومي</footer>
+  <footer>﴿ وَقُل رَّبِّ زِدْنِي عِلْمًا ﴾</footer>
 </div>
 
 <script>
-const STORAGE_KEY = 'haqaiq_entries';
+const STORAGE_KEY = 'hidaya_entries';
 let entries = [];
 
 function todayISO(){
@@ -345,8 +349,9 @@ function computeStreak(){
   let cursor = new Date();
   cursor.setHours(0,0,0,0);
 
-  const cursorISO = () => cursor.toISOString().slice(0,10);
+  // allow streak to start from today or yesterday
   let idx = 0;
+  const cursorISO = () => cursor.toISOString().slice(0,10);
 
   if(dates[0] !== cursorISO()){
     cursor.setDate(cursor.getDate() - 1);
@@ -434,7 +439,7 @@ async function saveEntry(){
 
   entries.push(entry);
   btn.disabled = true;
-  statusEl.style.color = '#8B6F4E';
+  statusEl.style.color = '#7C8F6E';
   statusEl.textContent = 'جارِ الحفظ...';
 
   const ok = await persist();
